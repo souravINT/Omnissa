@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+:root{
+    --primary-font:"Outfit", sans-serif;
+    --bannerhead-font: 42px;
+    --contenthead-font: 36px;
+    --stephead-font: 26px;
+    --bannerFont-color:#ffffffe6;
+    --buttonBg: #C9FF27;
+    --buttonColor: #0A1D73;
+    --prim-color: #001E60;
+    --p-color: #0A1D73;
+    --border-color: #D00AFF;
+    --step-color: #8059F5;
+    --camp-tag: #4D6190;
+    --camp-name: #4A12F0;
+    --resource-bg: rgba(184, 160, 249, 0.2);
+    --resource-head-color: #042550;
+    --resource-text-color: #4058FF;
+    --smooth-bg: #F1ECFE;
+}
+
+.Omnissa-WrapperDiv{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    color: #000;
+    line-height: normal;
+}
+.Omnissa-WrapperDiv a, .Omnissa-WrapperDiv a:hover{text-decoration: none; color: inherit; display: inline-block;}
+.Omnissa-WrapperDiv .t-center{text-align: center;}
+.Omnissa-WrapperDiv .dflex{display: flex !important; flex-wrap: wrap;}
+.Omnissa-WrapperDiv a, .Omnissa-WrapperDiv ::after, .Omnissa-WrapperDiv ::before, .Omnissa-WrapperDiv img, .Omnissa-WrapperDiv .campaign-content .step{transition: all 300ms ease-in-out;}
+/* Banner Section */
+.Omnissa-WrapperDiv .banner{background: #001E60 url(media/grad_background.png) center no-repeat;position: relative;background-size: cover; height: 400px;}
+.Omnissa-WrapperDiv .bannerImg { position: absolute; right: 0; top: 0; bottom: 0; height: 400px;}
+.Omnissa-WrapperDiv .wrappContainer{max-width: 1340px; margin: 0 auto;}
+.Omnissa-WrapperDiv .banner-content{color: var(--bannerFont-color); max-width: 740px;}
+.Omnissa-WrapperDiv h1{font-size: var(--bannerhead-font); font-weight: 400;margin-bottom:30px;}
+.Omnissa-WrapperDiv .banner-content{color: var(--bannerFont-color);max-width: 740px;padding: 60px 0 86px;height: 100%;}
+.Omnissa-WrapperDiv p.para{font-size: 24px; font-weight: 200; margin-bottom: 40px;}
+.Omnissa-WrapperDiv a.common-Btn {font-size: 20px;color: var(--buttonColor);background: var(--buttonBg);text-transform: uppercase;padding: 17px 60px 17px 25px;border-radius: 100px;position: relative;margin-bottom: 10px; border: 1px solid transparent;}
+.Omnissa-WrapperDiv a.common-Btn::after { content: ''; background: url(media/Arrow.png) no-repeat center; height: 18px; width: 22px; z-index: 1; position: absolute; background-size: 20px; top: 0; bottom: 0; margin: auto; right: 28px;}
+.Omnissa-WrapperDiv a.common-Btn:hover{background: var(--prim-color); color: var(--bannerFont-color); border-color: #c1c1c1; padding-right: 75px;}
+.Omnissa-WrapperDiv a.common-Btn:hover::after {filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(319deg) brightness(102%) contrast(101%);}
+/* Banner Section */
+/* Campaign steps */
+.Omnissa-WrapperDiv .campaign-steps{padding: 50px 0 80px;position: relative;}
+.Omnissa-WrapperDiv h2{font-size: var(--contenthead-font); color: var(--prim-color); font-weight: 300;margin-bottom: 56px;}
+.Omnissa-WrapperDiv .campaign-content .step{border: 1px solid var(--border-color); border-radius: 15px; box-shadow: 0 0 20px #00000033; padding: 15px 20px 30px; width: calc(100% / 3 - 20px); background: var(--bannerFont-color);}
+.Omnissa-WrapperDiv .campaign-steps::before { content: ''; background: var(--smooth-bg); height: 250px; width: 100%; position: absolute; z-index: -1; top: 0; }
+.campaign-content .step:hover {border: 1px solid var(--camp-name); box-shadow: 0 0 40px #4a12f04d;}
+.Omnissa-WrapperDiv .h4{font-size: var(--stephead-font); color: var(--step-color); font-weight: 400; margin-bottom: 15px;}
+.Omnissa-WrapperDiv .C-steps {gap: 30px;}
+.Omnissa-WrapperDiv .text{font-size: 16px;}
+.Omnissa-WrapperDiv .C-steps span{display: block;}
+.Omnissa-WrapperDiv .Campaign:hover .C-image img { transform: scale(1.05); }
+/* Campaign steps */
+/* feature-asset sec */
+.Omnissa-WrapperDiv .feature-asset .leftSide, .Omnissa-WrapperDiv .feature-asset .rightSide{width: 50%;}
+.Omnissa-WrapperDiv .rightSide h2{margin-bottom: 10px;}
+.Omnissa-WrapperDiv .rightSide .text{color: var(--p-color);margin-bottom: 30px;}
+.Omnissa-WrapperDiv .feature-asset .rightSide{padding-left: 110px;}
+.Omnissa-WrapperDiv .rightSide .C-text .text {color: #000;margin: 10px 0 20px;}
+.Omnissa-WrapperDiv .Campaign {gap: 28px;flex-wrap: initial;margin-bottom: 25px;}
+.Omnissa-WrapperDiv h6.h6 { font-size: 14px; font-weight: 400; color: var(--camp-tag); text-transform: uppercase; line-height: 1.6; }
+.Omnissa-WrapperDiv .Campaign:hover h6.h6{color: var(--border-color);}
+.Omnissa-WrapperDiv .h5 { font-size: 20px; font-weight: 500; color: var(--camp-name); line-height: 1.4; }
+.Omnissa-WrapperDiv .campaign-btn {font-size: 12px;text-transform: uppercase;color: var(--border-color);position: relative;padding-right: 25px;font-weight: 600;}
+.Omnissa-WrapperDiv .campaign-btn::after{content: '';background: url(media/Arrow.png) no-repeat center;height: 18px;width: 22px;background-size: 15px;position: absolute;top: 0;bottom: 0;right: 0;margin: auto;filter: brightness(0) saturate(100%) invert(17%) sepia(83%) saturate(4041%) hue-rotate(280deg) brightness(106%) contrast(123%);}
+.Omnissa-WrapperDiv .Campaign:hover .campaign-btn{color: var(--camp-name);}
+.Omnissa-WrapperDiv .Campaign:hover .campaign-btn::after{right: -12px;filter: brightness(0) saturate(100%) invert(12%) sepia(76%) saturate(7389%) hue-rotate(259deg) brightness(89%) contrast(113%);}
+.Omnissa-WrapperDiv .left-img{transform: scale(1);position: relative;width: 620px;height: 635px;}
+.Omnissa-WrapperDiv .left-img::after{content: '';background: url(media/imgframe.png) center no-repeat;position: absolute;background-size: 620px;transform: rotate(12deg);left: 0;top: 0;bottom: 0;right: 0;}
+.Omnissa-WrapperDiv .left-img img { height: 100%; width: 100%; object-fit: cover; padding: 18px 20px 22px;border-radius: 50%;}
+.Omnissa-WrapperDiv .Campaign-list .C-image { height: 150px; width: 200px; flex-shrink: 0; overflow: hidden; border-radius: 4px; }
+
+/* feature-asset sec */
+/* resources sec */
+.Omnissa-WrapperDiv .resources-section{background: var(--resource-bg) url(media/resourcebg.png) no-repeat 80%; padding: 80px 0px 100px;margin-top: 80px;}
+.Omnissa-WrapperDiv h3.h3 { font-size: 30px; font-weight: 700; color: var(--resource-head-color);text-transform: uppercase;margin-bottom: 15px;}
+.Omnissa-WrapperDiv h3.h3 > span{font-size: 18px; color: var(--resource-text-color); display: block;}
+.Omnissa-WrapperDiv .resourceTitel, .Omnissa-WrapperDiv .resourceoption {width: calc(100% / 3 - 20px);}
+.Omnissa-WrapperDiv .resource-wrap{gap: 30px;align-items: center;}
+.Omnissa-WrapperDiv .resourceoption .h5 { font-size: 22px; margin-bottom: 15px; display: block; font-weight: 700;}
+.Omnissa-WrapperDiv .resourceoption .h5:hover{color: var(--prim-color);}
+.Omnissa-WrapperDiv .resource-wrap p.text{line-height: 1.3;color: #525252;}
+.Omnissa-WrapperDiv .resource-Img{margin-bottom: 20px;}
+/* resources sec */
+/* footer sec */
+.Omnissa-WrapperDiv .social-link img, .Omnissa-WrapperDiv .resource-Img img, .Omnissa-WrapperDiv .Campaign-list .C-image img{height: 100%; width: 100%;object-fit: cover;}
+.Omnissa-WrapperDiv .mainFooter {padding: 25px 0 50px; align-items: center; justify-content: space-between;}
+.Omnissa-WrapperDiv .social-link {gap: 16px;}
+.Omnissa-WrapperDiv .resource-Img{max-width: 44px; aspect-ratio: 1;}
+.Omnissa-WrapperDiv .social-link a.social:hover {background: var(--buttonBg);}
+.Omnissa-WrapperDiv .mainFooter .a-link:hover{color: var(--camp-name);}
+.Omnissa-WrapperDiv .social-link a.social:hover img {filter: brightness(0) saturate(100%) invert(10%) sepia(100%) saturate(7120%) hue-rotate(261deg) brightness(91%) contrast(108%);}
+.Omnissa-WrapperDiv .social-link a.social img {width: 22px; height: 22px; filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(160deg) brightness(105%) contrast(102%);}
+.Omnissa-WrapperDiv .social-link a.social {width: 44px; height: 44px; background: var(--camp-name); border-radius: 50%; display: grid; place-items: center;}
+/* footer sec */
